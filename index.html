@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập tạo máy tính đơn giản</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4"><input type="text" id="display"/></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" onclick="display.value+=this.value"/></td>
+        <td><input type="button" value="2" onclick="display.value+=this.value"/></td>
+        <td><input type="button" value="3" onclick="display.value+=this.value"/></td>
+        <td><input type="button" value="+" onclick="display.value+=this.value"/></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onclick="display.value+=this.value"/></td>
+        <td><input type="button" value="5" onclick="display.value+=this.value"/></td>
+        <td><input type="button" value="6" onclick="display.value+=this.value"/></td>
+        <td><input type="button" value="-" onclick="display.value+=this.value"/></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7" onclick="display.value+=this.value"/></td>
+        <td><input type="button" value="8" onclick="display.value+=this.value"/></td>
+        <td><input type="button" value="9" onclick="display.value+=this.value"/></td>
+        <td><input type="button" value="*" onclick="display.value+=this.value"/></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="C" onclick="display.value=''"/></td>
+        <td><input type="button" value="0" onclick="display.value+=this.value"/></td>
+        <td><input type="button" value="=" onclick="display.value=eval(display.value)"/></td>
+        <td><input type="button" value="/" onclick="display.value+=this.value"/></td>
+    </tr>
+</table>
+</body>
+<style type="text/css">
+
+    tr,td{
+        border: solid 1px;
+        text-align: center;
+    }
+    td{
+        width: 50px;
+        height: 30px;
+    }
+    button{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</html>
